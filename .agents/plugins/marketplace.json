@@ -1,0 +1,20 @@
+{
+  "name": "nepali-tithi-miti",
+  "interface": {
+    "displayName": "Nepali Tithi Miti"
+  },
+  "plugins": [
+    {
+      "name": "nepali-tithi-miti",
+      "source": {
+        "source": "local",
+        "path": "."
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

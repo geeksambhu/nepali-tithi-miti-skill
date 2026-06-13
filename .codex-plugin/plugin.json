@@ -1,0 +1,41 @@
+{
+  "name": "nepali-tithi-miti",
+  "version": "0.1.0",
+  "description": "Nepali calendar skill for Bikram Sambat dates, tithi, panchang, festivals, and AD/BS conversion.",
+  "author": {
+    "name": "Shiva Gaire",
+    "url": "https://github.com/geeksambhu"
+  },
+  "homepage": "https://github.com/geeksambhu/nepali-tithi-miti-skill",
+  "repository": "https://github.com/geeksambhu/nepali-tithi-miti-skill",
+  "license": "MIT",
+  "keywords": [
+    "nepali",
+    "calendar",
+    "bikram-sambat",
+    "tithi",
+    "miti",
+    "panchang",
+    "date-conversion"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Nepali Tithi Miti",
+    "shortDescription": "Nepali dates, tithi, panchang, and BS/AD lookup",
+    "longDescription": "Cache-first Nepali calendar support for Bikram Sambat dates, AD/BS conversion, Nepal-time today lookups, tithi, panchang fields, festivals, and Hamro Patro-style source extraction. Uses uv and nepali-datetime for deterministic conversion and avoids guessing panchang data.",
+    "developerName": "Shiva Gaire",
+    "category": "Productivity",
+    "capabilities": [
+      "Calendar Lookup",
+      "Date Conversion",
+      "Web Extraction"
+    ],
+    "websiteURL": "https://github.com/geeksambhu/nepali-tithi-miti-skill",
+    "defaultPrompt": [
+      "Get today's Nepali miti and tithi.",
+      "Convert 2026-06-13 AD to BS.",
+      "Scrape Hamro Patro for today's panchang."
+    ],
+    "brandColor": "#DC2626"
+  }
+}

@@ -50,7 +50,7 @@
         "Use the skill to look up the tithi for BS 2083-02-18 from verified cached data.",
         "Use uv run nepali-tithi scrape-date 2026-06-13 --source all --cache to extract tithi/miti from configured calendar sources."
     ],
-  "license": "UNSPECIFIED",
+  "license": "MIT",
   "homepage": "https://github.com/geeksambhu/nepali-tithi-miti-skill",
   "repository": "https://github.com/geeksambhu/nepali-tithi-miti-skill"
 }

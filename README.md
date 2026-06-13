@@ -6,6 +6,7 @@ This project is designed for two use cases:
 
 - deterministic local tooling for Nepali date/calendar lookups
 - a portable `SKILL.md` folder that coding agents can load as a reusable skill
+- a Codex-style plugin manifest for marketplace installation
 
 The skill covers:
 
@@ -180,11 +181,21 @@ This repo now includes a reusable marketplace listing:
 marketplace/nepali-tithi-miti.json
 ```
 
+It also includes a Codex-style plugin manifest:
+
+```text
+.codex-plugin/plugin.json
+.agents/plugins/marketplace.json
+```
+
 When publishing to a public skills repository, include:
 
 - `skills/nepali-tithi-miti/SKILL.md`
 - `skills/nepali-tithi-miti/agents/openai.yaml`
+- `.codex-plugin/plugin.json`
+- `.agents/plugins/marketplace.json`
 - `marketplace/nepali-tithi-miti.json`
+- `LICENSE`
 - this `README.md`
 - `docs/SKILLS_REPOSITORY.md`
 - `docs/nepalipatro-widget.html`
@@ -199,8 +210,14 @@ Recommended repository layout:
 ```text
 nepali-tithi-miti-skill/
 ├── README.md
+├── LICENSE
 ├── pyproject.toml
 ├── uv.lock
+├── .codex-plugin/
+│   └── plugin.json
+├── .agents/
+│   └── plugins/
+│       └── marketplace.json
 ├── skills/
 │   └── nepali-tithi-miti/
 │       ├── agents/

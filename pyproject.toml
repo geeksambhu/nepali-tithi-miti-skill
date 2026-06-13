@@ -9,6 +9,7 @@ description = "Python CLI and package for Nepali BS date, tithi, miti, and calen
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [{ name = "Shiva Gaire" }]
+license = "MIT"
 dependencies = [
     "beautifulsoup4>=4.12.0",
     "nepali-datetime>=1.0.8.5",
@@ -19,6 +20,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
+    "pyyaml>=6.0.0",
     "pytest>=8.0.0",
     "ruff>=0.5.0",
     "mypy>=1.10.0",

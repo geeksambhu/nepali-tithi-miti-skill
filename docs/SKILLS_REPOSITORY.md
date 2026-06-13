@@ -145,8 +145,11 @@ For a complete public repo, include:
 
 ```text
 README.md
+LICENSE
 pyproject.toml
 uv.lock
+.codex-plugin/plugin.json
+.agents/plugins/marketplace.json
 skills/nepali-tithi-miti/SKILL.md
 skills/nepali-tithi-miti/agents/openai.yaml
 marketplace/nepali-tithi-miti.json
