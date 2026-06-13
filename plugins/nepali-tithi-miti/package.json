@@ -1,0 +1,20 @@
+{
+  "name": "nepali-tithi-miti",
+  "version": "0.1.0",
+  "description": "Nepali calendar skill for Bikram Sambat dates, tithi, panchang, festivals, and AD/BS conversion.",
+  "license": "MIT",
+  "openclaw": {
+    "compat": {
+      "pluginApi": "^0.21.0"
+    },
+    "build": {
+      "openclawVersion": "0.21.0"
+    },
+    "runtimeExtensions": [
+      "./index.js"
+    ],
+    "entrypoints": [
+      "./index.js"
+    ]
+  }
+}
