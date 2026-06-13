@@ -1,0 +1,23 @@
+[
+  {
+    "bs_year": 2083,
+    "bs_month": 2,
+    "bs_day": 18,
+    "ad_year": 2026,
+    "ad_month": 6,
+    "ad_day": 1,
+    "weekday_en": "Monday",
+    "weekday_np": "सोमबार",
+    "tithi_np": "अधिक जेठ कृष्ण प्रतिपदा",
+    "tithi_en": "Pratipada",
+    "paksha": "Krishna",
+    "panchang": "Pratipada",
+    "festival_np": null,
+    "festival_en": null,
+    "holiday_type": null,
+    "source": "sample",
+    "source_url": "data/sample_calendar_days.json",
+    "fetched_at": "2026-06-13T00:00:00Z",
+    "confidence": "medium"
+  }
+]
