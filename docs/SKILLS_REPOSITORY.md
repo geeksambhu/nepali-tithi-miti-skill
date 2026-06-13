@@ -148,8 +148,9 @@ README.md
 LICENSE
 pyproject.toml
 uv.lock
-.codex-plugin/plugin.json
 .agents/plugins/marketplace.json
+plugins/nepali-tithi-miti/.codex-plugin/plugin.json
+plugins/nepali-tithi-miti/skills/nepali-tithi-miti/
 skills/nepali-tithi-miti/SKILL.md
 skills/nepali-tithi-miti/agents/openai.yaml
 marketplace/nepali-tithi-miti.json

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Nepali Tithi Miti"
+  short_description: "Nepali dates, tithi, panchang, and BS/AD lookup"
+  default_prompt: "Use $nepali-tithi-miti to answer this Nepali calendar question with verified cached data and no guessed tithi."
+
+policy:
+  allow_implicit_invocation: true

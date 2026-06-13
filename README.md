@@ -184,7 +184,7 @@ marketplace/nepali-tithi-miti.json
 It also includes a Codex-style plugin manifest:
 
 ```text
-.codex-plugin/plugin.json
+plugins/nepali-tithi-miti/.codex-plugin/plugin.json
 .agents/plugins/marketplace.json
 ```
 
@@ -192,7 +192,8 @@ When publishing to a public skills repository, include:
 
 - `skills/nepali-tithi-miti/SKILL.md`
 - `skills/nepali-tithi-miti/agents/openai.yaml`
-- `.codex-plugin/plugin.json`
+- `plugins/nepali-tithi-miti/.codex-plugin/plugin.json`
+- `plugins/nepali-tithi-miti/skills/nepali-tithi-miti/`
 - `.agents/plugins/marketplace.json`
 - `marketplace/nepali-tithi-miti.json`
 - `LICENSE`
@@ -213,11 +214,15 @@ nepali-tithi-miti-skill/
 ├── LICENSE
 ├── pyproject.toml
 ├── uv.lock
-├── .codex-plugin/
-│   └── plugin.json
 ├── .agents/
 │   └── plugins/
 │       └── marketplace.json
+├── plugins/
+│   └── nepali-tithi-miti/
+│       ├── .codex-plugin/
+│       │   └── plugin.json
+│       └── skills/
+│           └── nepali-tithi-miti/
 ├── skills/
 │   └── nepali-tithi-miti/
 │       ├── agents/
@@ -230,6 +235,14 @@ nepali-tithi-miti-skill/
 ├── data/
 └── docs/
 ```
+
+For marketplace validators, submit the plugin path as `plugins/nepali-tithi-miti`, not `.`.
+
+After pushing, enable repository security settings on GitHub:
+
+- Settings > Code security > Code scanning: enable CodeQL default setup or use this repo's CodeQL workflow.
+- Settings > Code security > Dependabot: enable Dependabot alerts.
+- Settings > Rules > Rulesets: add a tag ruleset for `v*` tags to keep releases immutable.
 
 Suggested tags:
 
