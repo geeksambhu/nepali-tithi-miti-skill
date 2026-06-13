@@ -1,0 +1,33 @@
+{
+  "name": "nepali-tithi-miti",
+  "display_name": "Nepali Tithi Miti",
+  "description": "Safe, cache-first Nepali calendar skill for Bikram Sambat dates, tithi, panchang, festivals, and AD/BS conversion.",
+  "entrypoint": "SKILL.md",
+  "runtime": {
+    "type": "python",
+    "installer": "uv",
+    "setup": "uv sync --extra dev",
+    "commands": [
+      "uv run nepali-tithi today",
+      "uv run nepali-tithi ad-to-bs 2026-06-13",
+      "uv run nepali-tithi bs-to-ad 2083-02-30",
+      "uv run nepali-tithi scrape-today --source all --cache",
+      "uv run nepali-tithi scrape-date 2026-06-13 --source all --cache"
+    ]
+  },
+  "tags": [
+    "nepali",
+    "calendar",
+    "bikram-sambat",
+    "tithi",
+    "miti",
+    "panchang",
+    "date-conversion"
+  ],
+  "permissions": {
+    "network_required": true,
+    "network_note": "Only needed for explicit scrape-today lookups.",
+    "secrets_required": false,
+    "filesystem_cache": "~/.nepali_tithi_miti/calendar.sqlite3"
+  }
+}

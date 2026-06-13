@@ -1,0 +1,56 @@
+{
+  "name": "nepali-tithi-miti",
+  "display_name": "Nepali Tithi Miti",
+  "version": "0.1.0",
+  "summary": "Safe, cache-first Nepali calendar skill for Bikram Sambat dates, tithi, panchang, festivals, and AD/BS conversion.",
+  "description": "Nepali Tithi Miti is a safe, cache-first Nepali calendar skill for Bikram Sambat dates, AD/BS conversion, tithi, panchang fields, Nepali festivals, and Nepal-time today lookups. It uses deterministic Python tooling and verified cached data rather than guessing.",
+  "skill_path": "skills/nepali-tithi-miti",
+  "entrypoint": "skills/nepali-tithi-miti/SKILL.md",
+  "package": {
+    "type": "python",
+    "name": "nepali-tithi-miti",
+    "requires_python": ">=3.10",
+    "installer": "uv",
+    "cli": "uv run nepali-tithi"
+  },
+  "tags": [
+    "nepali",
+    "calendar",
+    "bikram-sambat",
+    "tithi",
+    "miti",
+    "panchang",
+    "festival",
+    "date-conversion",
+    "python",
+    "agent-skill"
+  ],
+  "capabilities": [
+    "AD to BS conversion",
+    "BS to AD conversion",
+    "Nepal-time today lookup",
+    "cached tithi lookup",
+    "cached panchang lookup",
+    "cached festival and holiday lookup"
+  ],
+  "data_policy": {
+    "network_default": "disabled",
+    "cache_first": true,
+    "requires_verified_calendar_data": true,
+    "secrets_required": false,
+    "notes": "Do not scrape aggressively or live per user request. Hamro Patro-style ingestion must be explicit, local, cache-first, rate-limited, and allowed by the source."
+  },
+  "install": {
+    "skill_folder": "Copy skills/nepali-tithi-miti into the target agent skills directory.",
+    "python_tool": "Run uv sync --extra dev from the repository root."
+  },
+    "prompts": [
+        "Use $nepali-tithi-miti to answer today's Nepali miti in Nepal time.",
+        "Use the Nepali Tithi Miti skill to convert 2026-06-13 AD to BS.",
+        "Use the skill to look up the tithi for BS 2083-02-18 from verified cached data.",
+        "Use uv run nepali-tithi scrape-date 2026-06-13 --source all --cache to extract tithi/miti from configured calendar sources."
+    ],
+  "license": "UNSPECIFIED",
+  "homepage": "https://github.com/geeksambhu/nepali-tithi-miti-skill",
+  "repository": "https://github.com/geeksambhu/nepali-tithi-miti-skill"
+}
