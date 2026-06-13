@@ -7,7 +7,7 @@ from typing import Iterable
 import requests
 from bs4 import BeautifulSoup
 
-from .constants import NEPALI_MONTHS_EN, NEPALI_MONTHS_NP, WEEKDAYS_NP
+from .constants import NEPALI_MONTHS_NP, WEEKDAYS_NP
 from .models import CalendarDay
 from .parsing import to_ascii_digits
 
@@ -237,7 +237,6 @@ def _calendar_day_from_hamro_block(
 def parse_month_html(html: str, bs_year: int, bs_month: int, source_url: str) -> list[CalendarDay]:
     """Parse Hamro Patro month HTML into cacheable calendar records."""
     lines = _text_lines(html)
-    fetched_at = datetime.now(timezone.utc).isoformat()
     days: list[CalendarDay] = []
 
     for index, line in enumerate(lines):
@@ -278,7 +277,6 @@ def parse_hamropatro_home_today(html: str) -> CalendarDay | None:
     Jun 13, 2026
     """
     lines = _text_lines(html)
-    fetched_at = datetime.now(timezone.utc).isoformat()
     for index, line in enumerate(lines):
         parsed_bs = _parse_bs_heading(line)
         if parsed_bs is None:
