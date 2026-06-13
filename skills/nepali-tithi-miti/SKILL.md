@@ -1,6 +1,7 @@
 ---
 name: nepali-tithi-miti
 description: Safe, cache-first Nepali calendar support for Bikram Sambat miti, AD/BS conversion, Nepal-time "today" requests, tithi, panchang fields, festivals, and Hamro Patro-style calendar lookup. Use when the user asks about Nepali dates, miti, tithi, panchang, Bikram Sambat, Dashain/Tihar/Teej/Holi/Buddha Jayanti dates, Nepali fiscal years, BS/AD conversion, or verified Nepali calendar data.
+license: MIT
 ---
 
 # Nepali Tithi Miti
